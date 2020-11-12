@@ -1,0 +1,387 @@
+$marca: #4C1BFF;
+$gray_color: #94A2B3;
+$dark_color: #282E4F;
+$bg_blue: #3A16BF;
+$soft_Dark: #35394C;
+
+
+.soft-dark
+{
+    color: $soft_Dark;
+}
+
+
+
+.bg_blue_lm
+{
+    background-color: $bg_blue;
+}
+
+
+.fs_2-5rem
+{
+    font-size: 2.5rem
+}
+
+
+
+.bg_lm
+{
+    background-color: $marca;
+}
+
+
+ 
+    
+.bg_lm2
+{
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius:50%;
+}
+
+ 
+
+
+
+
+@mixin flotante($valor) 
+{
+    position: $valor;    
+}
+
+.float
+{
+    @include flotante(absolute);
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.padd
+{
+    padding: 11px 10px 10px 12px;
+    border: 1px solid $marca;
+    border-radius: 50%;
+    color: $marca;
+}
+
+
+.color_gray
+{
+    color: $gray_color;
+}
+
+
+.color_lm
+{
+    color: $marca;
+}
+
+a:hover
+{
+    color: #ffffff;
+}
+
+
+.fw-500
+{
+    font-weight: 500;
+}
+
+
+.fw-700
+{
+    font-weight: 700;
+}
+
+
+.br-20
+{
+    border-radius: 20px;
+}
+
+
+.fs-3rem
+{
+    font-size: 3rem;   
+}
+
+
+.p_relative
+{
+   @include flotante(relative);
+}
+
+
+.fs-14
+{
+    font-size: 14px; 
+}
+
+
+
+
+@mixin marginTop($value) 
+{
+    margin-top: $value;    
+}
+
+
+
+
+
+
+
+
+.bg-empresas
+{
+    background-image: url("../img/bg_empresas.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+        background-position: center;
+}
+
+
+
+.h-400
+{
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+.color_lm:hover{
+    color: $marca;
+}
+
+
+.w-50
+{ 
+    margin: auto;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 7px #63636361;
+
+}
+
+
+.pb-6
+{
+    padding-bottom: 4rem;
+}
+
+
+.bg-photo
+    {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+.color_dark
+{
+color: $dark_color;
+}
+
+
+// EMPIEZA RESPONSIVE
+
+@media screen and (max-width:767px)
+{
+    .icons-r
+    {
+        li
+        {
+            img
+            {
+                width: 10vw;
+            }
+        }
+    }
+
+
+    .fs-servicios
+    {
+        margin: 1.2rem 30px 0;
+        font-size: 5.5vw;
+    }
+
+     .w-50
+    {
+        width: 90%; 
+          padding: 2rem 1.8rem;
+    }
+
+
+    .btn-responsive
+    {
+        padding: 20px 30px;
+        border-radius: 50px;
+    }
+
+
+    .fs_6vw
+    {
+        font-size: 6vw;
+    }
+
+
+    .fs_14vw
+    {
+        font-size: 14vw;
+    }
+
+    .fs_11vw
+    {
+        font-size: 12vw;
+    }
+
+    
+    .wr-100
+    {
+        width: 100%;
+    }
+
+    .pa_responsive
+    {
+        @include flotante(absolute);
+        right: 8px;
+        top: 97%;
+    }
+
+
+    .fs-3rem
+    {
+        font-size: 11vw;   
+    }
+
+    
+    .fs_r_14
+    {
+        font-size: 4vw;
+    }
+
+    .fs-responsive
+    {
+        font-size: 5vw;
+    }
+
+    
+    .margin-lateral
+    {
+        margin: 0 49px;
+    }
+
+       
+    .fs_5_5vw
+    {
+        font-size: 5.5vw;
+        margin: 1rem 30px 0;
+    }
+
+    
+
+    .mt_3
+    {
+        @include marginTop(2rem)
+    }
+
+
+
+    .mt_5
+    {
+        @include marginTop(2rem)
+    }   
+
+
+
+        .fs_10vw
+        {
+            font-size: 10vw;
+        }
+
+
+        .fs-30
+        {
+        font-size: 1.5rem;
+        }
+
+
+}
+
+
+
+@media screen and (min-width:992px)
+{
+    .hh-100
+    {
+        height: 100vh;
+    }
+
+        .mt_3
+    {
+        @include marginTop(3rem)
+    }
+
+
+    .fs-30
+    {
+    font-size: 30px;
+    }
+
+
+
+    .mt_5
+    {
+        @include marginTop(5.8rem)
+    }
+
+    .bg-photo
+    {
+        background-image: url("../img/b-lm.png");
+    }
+
+
+    .w-50
+    {
+        width: 50%; 
+          padding: 3rem 3.5rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:991px)
+{
+     .float
+        {
+            @include flotante(relative);
+        }
+
+    .bg-photo
+    {
+        background-image: url("../img/rectangulo.png");
+    }
+
+}
+
+
+
+
+// TERMINA RESPONSIVE
+
+
+.filtro-blanco
+{
+    filter: brightness(15);
+}
+
+
+  h1
+    {
+        line-height: 1;
+    }
