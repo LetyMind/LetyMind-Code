@@ -3,11 +3,40 @@ $gray_color: #94A2B3;
 $dark_color: #282E4F;
 $bg_blue: #3A16BF;
 $soft_Dark: #35394C;
+$sky_blue: #299EF3;
+
+
+
+header
+{
+    background: rgb(230,240,255);
+}
+
+
+.bg_gradiente
+{
+    background: linear-gradient(180deg, rgba(230,240,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+ 
+
 
 
 .soft-dark
 {
     color: $soft_Dark;
+}
+
+
+.sky-blue
+{
+    color: $sky_blue;
+
+    &:hover
+    {
+         color: $sky_blue;
+         text-decoration: none;
+    }
 }
 
 
@@ -49,6 +78,21 @@ $soft_Dark: #35394C;
 {
     position: $valor;    
 }
+
+
+.p_absolute
+{
+    @include flotante(absolute)
+}
+
+
+.foto_float
+{
+    @include flotante(absolute);
+    top: 70%;
+    font-size: 1.5rem;
+}
+
 
 .float
 {
@@ -102,10 +146,6 @@ a:hover
 }
 
 
-.fs-3rem
-{
-    font-size: 3rem;   
-}
 
 
 .p_relative
@@ -122,6 +162,7 @@ a:hover
 
 
 
+
 @mixin marginTop($value) 
 {
     margin-top: $value;    
@@ -130,27 +171,17 @@ a:hover
 
 
 
-
-
-
-
-.bg-empresas
-{
-    background-image: url("../img/bg_empresas.png");
-    background-size: cover;
-    background-repeat: no-repeat; 
-        background-position: center;
-}
-
-
+ 
 
 .h-400
 {
     height: 400px;
     object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #7c0284;
 }
 
-
+ 
 
 .color_lm:hover{
     color: $marca;
@@ -176,8 +207,7 @@ a:hover
 .bg-photo
     {
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-repeat: no-repeat; 
     }
 
 
@@ -203,17 +233,32 @@ color: $dark_color;
     }
 
 
+    .pb-9
+    {
+        padding-bottom: 9rem;
+    }
+
+
+    .fs_2-5vw
+    {
+        font-size: 2.5vw;
+    }
+
+
+     #borrar_play
+    {
+        display: none;
+    }
+
     .fs-servicios
     {
         margin: 1.2rem 30px 0;
         font-size: 5.5vw;
     }
 
-     .w-50
-    {
-        width: 90%; 
-          padding: 2rem 1.8rem;
-    }
+   
+     
+
 
 
     .btn-responsive
@@ -240,17 +285,14 @@ color: $dark_color;
     }
 
     
-    .wr-100
-    {
-        width: 100%;
-    }
 
-    .pa_responsive
-    {
-        @include flotante(absolute);
-        right: 8px;
-        top: 97%;
+    .h-400
+    { 
+        box-shadow:  0 15px 26px #7c0284;
     }
+    
+
+  
 
 
     .fs-3rem
@@ -310,6 +352,14 @@ color: $dark_color;
         }
 
 
+        #d-block-r
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
 }
 
 
@@ -325,6 +375,22 @@ color: $dark_color;
     {
         @include marginTop(3rem)
     }
+
+            
+    .bg-empresas
+    {
+        img
+        {
+            height: 700px;
+            object-fit: cover;
+        }
+    }
+
+
+     #d-block-r
+     {
+         display: none;
+     }
 
 
     .fs-30
@@ -351,8 +417,50 @@ color: $dark_color;
           padding: 3rem 3.5rem;
     }
 
+}
+
+
+@media screen and (min-width:1200px)
+{
+ .fs-3rem
+    {
+        font-size: 4rem;   
+    }
+
+     .bg_apoyo
+    {
+        background-color: #fafaff;
+    }
+
+    .fs_10-7
+    {
+        font-size: 13px;
+    }
 
 }
+
+
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+    .fs-3rem
+    {
+        font-size: 3.2rem;   
+    }
+
+    .bg_apoyo
+    {
+        background-color: #fefeff;
+    }
+
+    
+    .fs_10-7
+    {
+        font-size: 10.7px;
+    }
+
+}
+
+
 
 
 @media screen and (max-width:991px)
@@ -365,7 +473,26 @@ color: $dark_color;
     .bg-photo
     {
         background-image: url("../img/rectangulo.png");
+        background-position: center;
     }
+
+    .wr-100
+    {
+        width: 100%;
+    }
+
+
+    .w-50
+    {
+        width: 90%; 
+          padding: 2rem 1.8rem;
+    }
+    
+     .fs_10-7
+    {
+        font-size: 4vw;
+    }
+
 
 }
 
@@ -385,3 +512,6 @@ color: $dark_color;
     {
         line-height: 1;
     }
+
+  
+ 
