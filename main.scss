@@ -7,9 +7,23 @@ $sky_blue: #299EF3;
 
 
 
+
+main
+{
+      background-image:  linear-gradient(180deg, white 50%, rgb(230,240,255) 50%);
+}
+
+
 header
 {
     background: rgb(230,240,255);
+}
+
+
+body
+{
+    background: linear-gradient(180deg, rgba(230,240,255,1) 0%, rgb(230,240,255) 100%);;  
+ 
 }
 
 
@@ -80,10 +94,6 @@ header
 }
 
 
-.p_absolute
-{
-    @include flotante(absolute)
-}
 
 
 .foto_float
@@ -364,6 +374,12 @@ color: $dark_color;
 
 
 
+.w-90
+{
+    width: 90%;
+}
+
+
 @media screen and (min-width:992px)
 {
     .hh-100
@@ -398,6 +414,12 @@ color: $dark_color;
     font-size: 30px;
     }
 
+    .p_absolute
+    {
+        @include flotante(absolute)
+    }
+
+    
 
 
     .mt_5
@@ -417,6 +439,12 @@ color: $dark_color;
           padding: 3rem 3.5rem;
     }
 
+
+     .fs_r_14
+    {
+        font-size: 18px;
+    }
+
 }
 
 
@@ -427,10 +455,7 @@ color: $dark_color;
         font-size: 4rem;   
     }
 
-     .bg_apoyo
-    {
-        background-color: #fafaff;
-    }
+     
 
     .fs_10-7
     {
@@ -447,10 +472,7 @@ color: $dark_color;
         font-size: 3.2rem;   
     }
 
-    .bg_apoyo
-    {
-        background-color: #fefeff;
-    }
+  
 
     
     .fs_10-7
