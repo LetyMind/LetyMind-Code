@@ -7,9 +7,7 @@ ventana = window.innerWidth
 
 Actual.textContent = fullY
 
-
-ventana < 992 ? borrar.remove() : console.log("Ventana mayor a 992 pixeles");
-
+ 
 
 
 

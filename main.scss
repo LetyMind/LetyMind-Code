@@ -32,7 +32,10 @@ body
     background: linear-gradient(180deg, rgba(230,240,255,1) 0%, rgba(255,255,255,1) 100%);
 }
 
- 
+ .bg_apoyo
+ {
+     background: linear-gradient(360deg, white 66%, transparent 100%);
+ }
 
 
 
@@ -54,10 +57,19 @@ body
 }
 
 
+.bg-empresas
+{
+    background-image: url("../img/bg_empresas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 .bg_blue_lm
 {
-    background-color: $bg_blue;
+    background-color: #acb4be;
 }
 
 
@@ -180,7 +192,10 @@ a:hover
 
 
 
-
+.shadow_text
+{
+    text-shadow: 0 0 4px #77737396;
+}
  
 
 .h-400
@@ -208,6 +223,14 @@ a:hover
 }
 
 
+   #d-block-r
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
 .pb-6
 {
     padding-bottom: 4rem;
@@ -216,7 +239,7 @@ a:hover
 
 .bg-photo
     {
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat; 
     }
 
@@ -239,7 +262,7 @@ color: $dark_color;
         {
             img
             {
-              width: 8.5vw;
+              width: 7.5vw;
             }
         }
     }
@@ -256,11 +279,7 @@ color: $dark_color;
         font-size: 2.5vw;
     }
 
-
-     #borrar_play
-    {
-        display: none;
-    }
+ 
 
     .fs-servicios
     {
@@ -308,7 +327,7 @@ color: $dark_color;
     
     .fs_r_14
     {
-        font-size: 4vw;
+        font-size: 3.9vw;
     }
 
     .fs-responsive
@@ -355,15 +374,6 @@ color: $dark_color;
         {
         font-size: 1.5rem;
         }
-
-
-        #d-block-r
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
 }
 
 
@@ -373,6 +383,14 @@ color: $dark_color;
 
 @media screen and (min-width:992px)
 {
+
+
+    .fs_18
+    {
+        font-size: 18px;
+    }
+
+
     .hh-100
     {
         height: 100vh;
@@ -384,21 +402,10 @@ color: $dark_color;
     }
 
             
-    .bg-empresas
-    {
-        img
-        {
-            height: 700px;
-            object-fit: cover;
-        }
-    }
+    
 
 
-     #d-block-r
-     {
-         display: none;
-     }
-
+    
 
     .fs-30
     {
@@ -426,8 +433,12 @@ color: $dark_color;
 
     .w-50
     {
-        width: 50%; 
-          padding: 5rem 2.5rem;
+          width: 50%; 
+          padding: 5.5rem 2.5rem;
+          p
+          {
+              font-size: 18px;
+          }
     }
 
 
@@ -456,7 +467,7 @@ color: $dark_color;
     
     .fs_r_14
     {
-        font-size: 22.5px;
+        font-size: 21px;
     }
     
 
