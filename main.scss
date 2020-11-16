@@ -188,9 +188,9 @@ a:hover
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 0 15px #7c0284;
+    box-shadow: 0 4.5px 16px #383131e8;
 }
-
+  
  
 
 .color_lm:hover{
@@ -227,6 +227,8 @@ color: $dark_color;
 }
 
 
+  
+
 // EMPIEZA RESPONSIVE
 
 @media screen and (max-width:767px)
@@ -237,7 +239,7 @@ color: $dark_color;
         {
             img
             {
-                width: 10vw;
+              width: 8.5vw;
             }
         }
     }
@@ -280,7 +282,7 @@ color: $dark_color;
 
     .fs_6vw
     {
-        font-size: 6vw;
+        font-size: 4.5vw;
     }
 
 
@@ -295,14 +297,7 @@ color: $dark_color;
     }
 
     
-
-    .h-400
-    { 
-        box-shadow:  0 15px 26px #7c0284;
-    }
-    
-
-  
+ 
 
 
     .fs-3rem
@@ -369,15 +364,11 @@ color: $dark_color;
             justify-content: center;
         }
 
-
 }
 
 
 
-.w-90
-{
-    width: 90%;
-}
+
 
 
 @media screen and (min-width:992px)
@@ -436,14 +427,21 @@ color: $dark_color;
     .w-50
     {
         width: 50%; 
-          padding: 3rem 3.5rem;
+          padding: 5rem 2.5rem;
     }
 
 
-     .fs_r_14
+ .wr-100
     {
-        font-size: 18px;
+        height: 250px;
     }
+
+
+    .w-90
+    {
+        width: 85%;
+    }
+
 
 }
 
@@ -455,7 +453,13 @@ color: $dark_color;
         font-size: 4rem;   
     }
 
-     
+    
+    .fs_r_14
+    {
+        font-size: 22.5px;
+    }
+    
+
 
     .fs_10-7
     {
@@ -472,6 +476,11 @@ color: $dark_color;
         font-size: 3.2rem;   
     }
 
+
+    .fs_r_14
+    {
+        font-size: 18px;
+    }
   
 
     
@@ -506,7 +515,7 @@ color: $dark_color;
 
     .w-50
     {
-        width: 90%; 
+          width: 90%; 
           padding: 2rem 1.8rem;
     }
     
@@ -515,6 +524,12 @@ color: $dark_color;
         font-size: 4vw;
     }
 
+
+    .w-90
+    {
+        width: 88%;
+    }
+    
 
 }
 
