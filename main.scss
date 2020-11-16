@@ -57,19 +57,18 @@ body
 }
 
 
-.bg-empresas
+
+
+footer
 {
-    background-image: url("../img/bg_empresas.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:#bdbdbd94;
 }
 
 
 
 .bg_blue_lm
 {
-    background-color: #acb4be;
+    background-color: $bg_blue;
 }
 
 
@@ -384,6 +383,14 @@ color: $dark_color;
 @media screen and (min-width:992px)
 {
 
+    .bg-empresas
+    {
+        background-image: url("../img/bg_empresas.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 
     .fs_18
     {
@@ -428,13 +435,14 @@ color: $dark_color;
     .bg-photo
     {
         background-image: url("../img/b-lm.png");
+        background-size: auto;
     }
 
 
     .w-50
     {
           width: 50%; 
-          padding: 5.5rem 2.5rem;
+          padding: 5.8rem 2.5rem;
           p
           {
               font-size: 18px;
@@ -512,11 +520,14 @@ color: $dark_color;
             @include flotante(relative);
         }
 
+
     .bg-photo
     {
         background-image: url("../img/rectangulo.png");
         background-position: center;
+        background-size: cover;
     }
+
 
     .wr-100
     {
