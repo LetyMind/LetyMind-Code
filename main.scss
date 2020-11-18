@@ -8,11 +8,19 @@ $sky_blue: #299EF3;
 
 
 
+.pos_ab
+{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
 main
 {
       background-image:  linear-gradient(180deg, white 50%, rgb(230,240,255) 50%);
 }
-
 
 header
 {
@@ -24,6 +32,13 @@ body
 {
     background: linear-gradient(180deg, rgba(230,240,255,1) 0%, rgb(230,240,255) 100%);;  
  
+}
+
+
+.wr-50
+{
+    width: 50%;
+    margin: auto;
 }
 
 
@@ -61,7 +76,7 @@ body
 
 footer
 {
-    background-color:#bdbdbd94;
+    background-color: #F8F8FF;
 }
 
 
@@ -179,6 +194,7 @@ a:hover
 {
     font-size: 14px; 
 }
+
 
 
 
