@@ -1,5 +1,5 @@
 $marca: #4C1BFF;
-$gray_color: #94A2B3;
+$gray_color: #3b3d3f;
 $dark_color: #282E4F;
 $bg_blue: #3A16BF;
 $soft_Dark: #35394C;
@@ -71,7 +71,7 @@ body
 
 footer
 {
-    background-color: #F8F8FF;
+    background-color: #f0f0f0;
 }
 
 
@@ -121,7 +121,7 @@ footer
 {
     @include flotante(absolute);
     top: 70%;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 
@@ -403,6 +403,18 @@ color: $dark_color;
     }
 
 
+    .fs_25rem
+    {
+        font-size: 2.5rem;
+    }
+
+
+    .wr-90
+    {
+        width: 88%;
+    }
+
+
     .fs_18
     {
         font-size: 18px;
@@ -461,7 +473,7 @@ color: $dark_color;
           padding: 5.8rem 2.5rem;
           p
           {
-              font-size: 18px;
+              font-size: 18.9px;
           }
     }
 
@@ -559,7 +571,7 @@ color: $dark_color;
     
      .fs_10-7
     {
-        font-size: 4vw;
+        font-size: 3.8vw;
     }
 
 
