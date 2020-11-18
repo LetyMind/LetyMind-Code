@@ -8,11 +8,6 @@ $sky_blue: #299EF3;
 
 
 
-.pos_ab
-{
-    position: absolute;
-    bottom: 0;
-}
 
 
 
@@ -425,7 +420,12 @@ color: $dark_color;
     }
 
             
-    
+        
+    .pos_ab
+    {
+        position: absolute;
+        bottom: 0;
+    }
 
 
     
