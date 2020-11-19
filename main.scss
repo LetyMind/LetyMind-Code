@@ -121,7 +121,7 @@ footer
 {
     @include flotante(absolute);
     top: 70%;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 
@@ -278,6 +278,12 @@ color: $dark_color;
     }
 
 
+    .fs-6vw
+    {
+        font-size: 6vw;
+    }
+
+
     .pb-9
     {
         padding-bottom: 9rem;
@@ -317,7 +323,7 @@ color: $dark_color;
 
     .fs_14vw
     {
-        font-size: 14vw;
+        font-size: 13vw;
     }
 
     .fs_11vw
@@ -337,7 +343,7 @@ color: $dark_color;
     
     .fs_r_14
     {
-        font-size: 3.9vw;
+        font-size: 4.85vw;
     }
 
     .fs-responsive
