@@ -280,7 +280,7 @@ color: $dark_color;
 
     .fs-6vw
     {
-        font-size: 6vw;
+        font-size: 5.4vw;
     }
 
 
@@ -337,7 +337,7 @@ color: $dark_color;
 
     .fs-3rem
     {
-        font-size: 11vw;   
+        font-size: 10.8vw;   
     }
 
     
@@ -405,7 +405,7 @@ color: $dark_color;
         background-image: url("../img/bg_empresas.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
 
@@ -443,6 +443,7 @@ color: $dark_color;
     {
         position: absolute;
         bottom: 0;
+        left: 0;
     }
 
 
@@ -553,6 +554,12 @@ color: $dark_color;
         {
             @include flotante(relative);
         }
+
+
+    .wr-90
+    {
+        width: 85.5%;
+    }
 
 
     .bg-photo
