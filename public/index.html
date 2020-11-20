@@ -394,16 +394,18 @@
             }
             return null;
         }
-        let url = 'https://metricasletymind.herokuapp.com/metrics'
-        let aux = {
-            utm_source: obtenerValorParametro('utm_source'),
-            utm_medium: obtenerValorParametro('utm_medium'),
-            utm_campaign: obtenerValorParametro('utm_capaign'),
-            utm_content: obtenerValorParametro('utm_content'),
-            utm_term: obtenerValorParametro('utm_term')
+        let url = new URL('https://metricasletymind.herokuapp.com/metrics?')
+        let variables = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']
+        let aux = {}
+        for (let i = 0; i < variables.length; i++) {
+            if (obtenerValorParametro(variables[i])) {
+                aux[variables[i]] = obtenerValorParametro(variables[i])
+            }
         }
-        url.search = new URLSearchParams(aux).toString()
-        console.log('dasdasdas', url)
+        console.log('aaa', aux)
+        url.search = new URLSearchParams(aux).toString();
+        console.log('aaa', url)
+
         fetch(url, {
             method: 'POST',
         }).then(res => {
@@ -413,6 +415,15 @@
                 console.error(error)
             })
     </script>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="107956180943952" theme_color="#000000"
+        logged_in_greeting="Hola que tal que deseas comprar" logged_out_greeting="Hola que tal que deseas comprar">
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=51961236106&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20LetyMind"
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 </body>
 
 </html>
