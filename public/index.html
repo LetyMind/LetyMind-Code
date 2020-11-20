@@ -383,7 +383,35 @@
         logged_out_greeting="¡Hola! ¿Te podemos ayudar en algo?">
     </div>
     <script>
-        console.log("dsasas", document.querySelector())
+        function obtenerValorParametro(sParametroNombre) {
+            var sPaginaURL = window.location.search.substring(1);
+            var sURLVariables = sPaginaURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParametro = sURLVariables[i].split('=');
+                if (sParametro[0] == sParametroNombre) {
+                    return sParametro[1];
+                }
+            }
+            return null;
+        }
+        let url = 'https://metricasletymind.herokuapp.com/metrics'
+        let aux = {
+            utm_source: obtenerValorParametro('utm_source'),
+            utm_medium: obtenerValorParametro('utm_medium'),
+            utm_campaign: obtenerValorParametro('utm_capaign'),
+            utm_content: obtenerValorParametro('utm_content'),
+            utm_term: obtenerValorParametro('utm_term')
+        }
+        url.search = new URLSearchParams(aux).toString()
+        console.log('dasdasdas', url)
+        fetch(url, {
+            method: 'POST',
+        }).then(res => {
+            console.info(res)
+        })
+            .catch(error => {
+                console.error(error)
+            })
     </script>
 </body>
 
